@@ -1,0 +1,592 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*全域*/
+* {
+  box-sizing: border-box;
+  /*outline: 1px solid #fff*/
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+body {
+  background-color: #1E1E1E;
+  line-height: 1.2;
+  font-family: "Noto Sans TC", sans-serif;
+  color: #fff;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+/*各區設定*/
+.header {
+  border-bottom: 1px solid #fff;
+  padding: 20px 0;
+}
+.header a {
+  color: #fff;
+}
+.header img {
+  max-width: 245px;
+}
+.header .nav-icon {
+  display: none;
+}
+
+.main h2 {
+  font-size: 120px;
+  padding: 40px 0;
+}
+.main .btn-start {
+  display: inline-block;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 16px;
+  padding: 20px 40px;
+  margin-bottom: 100px;
+}
+
+.sever {
+  padding: 160px 0;
+}
+.sever-title {
+  padding-bottom: 80px;
+}
+.sever-title h5 {
+  white-space: nowrap;
+  width: 33.33%;
+  padding-right: 24px;
+}
+.sever-title h4 {
+  width: 66.66%;
+}
+.sever-list {
+  gap: 24px;
+}
+.sever-listCard {
+  width: 33.33%;
+  border: 1px solid #525252;
+  padding: 80px 40px;
+  border-radius: 16px;
+}
+.sever-listCard:hover {
+  border-color: #fff;
+}
+
+.partner-logo {
+  /*兩側陰影做法go*/
+  position: relative;
+  white-space: nowrap;
+  /*兩側陰影做法end*/
+  /*參考同學做法1(兩側陰影)：https://codepen.io/Eero-Chiao/pen/OJBdyYg
+  position: relative;
+  overflow: hidden;
+  &::before, &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      z-index: 1;
+      box-shadow: 0 0 80px 80px #1E1E1E;
+  }*/
+  /*background: linear-gradient();*/
+}
+.partner-logo::before, .partner-logo::after {
+  position: absolute;
+  content: "";
+  top: 10;
+  bottom: 0;
+  box-shadow: 0 0 100px 100px #1E1E1E;
+}
+.partner-logo img {
+  width: 160px;
+  height: 40px;
+  padding: 0 20px;
+}
+.partner-message {
+  padding: 160px 0;
+  gap: 24px;
+}
+.partner-messageCard {
+  width: 33.33%;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.0784313725); /*background: rgba(255, 255, 255, 0.08);*/
+  border-radius: 16px;
+}
+
+.content {
+  color: #020202;
+  background-color: #fff;
+  border-radius: 160px;
+  padding: 160px 0;
+}
+.content h3 {
+  text-align: center;
+}
+
+.search {
+  background-color: #F2F2F2;
+  border-radius: 16px;
+  padding: 20px 40px;
+}
+.search-tool {
+  width: 100%;
+  color: #919191;
+  /*去除預設樣式↓↓*/
+  border: 0;
+  outline: none;
+  /*去除預設樣式↑↑*/
+  background-color: #F2F2F2;
+}
+
+.selectAd select { /*無法以class清除預設*/
+  /*將預設的select選擇框樣式清除↓*/
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  /*將預設的select選擇框樣式清除↑*/
+  border-radius: 16px;
+  padding: 20px 40px;
+}
+.selectAd-itemsAll optgroup, .selectAd-itemsNewold optgroup {
+  color: #919191;
+  padding: 20px 40px;
+}
+.selectAd-itemsAll option, .selectAd-itemsNewold option {
+  color: #020202;
+  padding-bottom: 4px;
+}
+.selectAd-itemsAll option:hover, .selectAd-itemsAll option:active, .selectAd-itemsAll option:focus, .selectAd-itemsNewold option:hover, .selectAd-itemsNewold option:active, .selectAd-itemsNewold option:focus {
+  background-color: #F2F2F2;
+}
+.selectAd-nav {
+  gap: 0 20px;
+}
+.selectAd-nav button {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #919191;
+  background-color: #fff;
+  border-radius: 16px;
+  border: 0;
+  padding: 8px 16px;
+  white-space: nowrap;
+}
+.selectAd-nav button:hover {
+  border: 1px solid #000;
+}
+.selectAd-nav button:active, .selectAd-nav button:focus {
+  background-color: #F2F2F2;
+  color: #020202;
+  font-weight: 700;
+  border: 0;
+}
+.selectAd .optg-style {
+  border-bottom: 1px solid #F2F2F2;
+}
+
+.content_list {
+  padding: 40px 0;
+}
+.content_list-card-img {
+  overflow: hidden;
+}
+.content_list-card-img img {
+  transition: 1.5s;
+}
+.content_list-card-img img:hover {
+  transform: scale(1.5, 1.5);
+}
+.content_list-card {
+  max-width: 416px;
+  border: 1px solid #F2F2F2;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.content_list-card-title, .content_list-card-body {
+  padding: 20px 32px;
+}
+.content_list-card-body {
+  border-top: 1px solid #F2F2F2;
+}
+
+.content-btn {
+  gap: 0 4px;
+}
+.content-btn button {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 700;
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  border: 0;
+  background-color: #fff;
+}
+.content-btn button:hover {
+  border: 1px solid #000;
+}
+.content-btn button:active, .content-btn button:focus {
+  color: #fff;
+  background-color: #020202;
+}
+
+/*6-use*/
+.use a {
+  color: #fff;
+}
+.use-top {
+  text-align: center;
+  padding: 160px 0;
+}
+.use-top-btn {
+  display: inline-block;
+  border: 1px solid #fff;
+  border-radius: 16px;
+  padding: 20px 40px;
+}
+.use-bottom {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 80px 0;
+}
+.use-bottom img {
+  max-width: 245px;
+}
+
+/*7-footer*/
+.footer {
+  padding: 32px 0;
+}
+.footer a {
+  color: #fff;
+  padding: 24px 0;
+}
+.footer-sideL-link {
+  gap: 20px;
+}
+.footer-sideR {
+  white-space: nowrap;
+}
+
+/*排版設定*/
+.d-flex {
+  display: flex;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.jcsb {
+  justify-content: space-between;
+}
+
+.jcfe {
+  justify-content: flex-end;
+}
+
+.aic {
+  align-items: center;
+}
+
+.fxdc {
+  flex-direction: column;
+}
+
+.fxww {
+  flex-wrap: wrap;
+}
+
+.fw-block {
+  font-weight: 900;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.fw-regular {
+  font-weight: 400;
+}
+
+.fz-14 {
+  font-size: 14px;
+}
+
+.fz-16 {
+  font-size: 16px;
+}
+
+.fz-20 {
+  font-size: 20px;
+}
+
+.fz-24 {
+  font-size: 24px;
+}
+
+.fz-32 {
+  font-size: 32px;
+}
+
+.fz-48 {
+  font-size: 48px;
+}
+
+.fz-80 {
+  font-size: 80px;
+}
+
+.lh1_5 {
+  line-height: 1.5;
+}
+
+.saerchRgb {
+  color: #919191;
+}
+
+.selectRgb {
+  color: #020202;
+}
+
+.cardRgb {
+  color: #525252;
+}
+
+.pb-4 {
+  padding-bottom: 4px;
+}
+
+.pr-12 {
+  padding-right: 12px;
+}
+
+.pr-16 {
+  padding-right: 16px;
+}
+
+.pr-20 {
+  padding-right: 20px;
+}
+
+.pr-100 {
+  padding-right: 100px;
+}
+
+.pl-12 {
+  padding-left: 12px;
+}
+
+.pb-8 {
+  padding-bottom: 8px;
+}
+
+.pb-12 {
+  padding-bottom: 12px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.pb-40 {
+  padding-bottom: 40px;
+}
+
+.pb-80 {
+  padding-bottom: 80px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+/*RWD*/
+@media (max-width: 375px) {
+  /*1-header*/
+  .header {
+    padding: 28px 0;
+  }
+  .header img {
+    max-width: 147px;
+  }
+  .header .nav {
+    display: none;
+  }
+  .header .nav-icon {
+    display: block;
+  }
+  /*2-main*/
+  .main h2 {
+    font-size: 48px;
+  }
+  .main .btn-start {
+    margin-bottom: 180px;
+  }
+  .main .effect img {
+    width: 33.33%;
+  }
+  /*3-sever*/
+  .sever {
+    padding: 120px 0;
+  }
+  .sever-title {
+    padding-bottom: 48px;
+  }
+  .sever h4, .sever h5 {
+    width: 100%;
+  }
+  .sever-listCard {
+    width: 100%;
+  }
+  /*4-partner*/
+  .partner-messageCard {
+    width: 100%;
+  }
+  /*5-content*/
+  .content {
+    border-radius: 20px;
+  }
+  .selectAd-itemsAll {
+    order: 1;
+  }
+  .selectAd-nav {
+    order: 3;
+  }
+  .selectAd-Newold {
+    order: 2;
+  }
+  .content_list {
+    padding: 48px 0 32px;
+  }
+  /*6-use*/
+  /*7-footer*/
+  .footer {
+    padding: 0;
+  }
+  .footer-sideL {
+    position: relative;
+    padding: 32px 0;
+  }
+  .footer-sideR {
+    position: absolute;
+    right: 12px;
+  }
+  /**/
+  .jcc-s {
+    justify-content: center;
+  }
+  .aifs-s {
+    align-items: flex-start;
+  }
+  .fxdc-s {
+    flex-direction: column;
+  }
+  .fxww-s {
+    flex-wrap: wrap;
+  }
+  .fxdcr-s {
+    flex-direction: column-reverse;
+  }
+  .fz-s-20 {
+    font-size: 20px;
+  }
+  .fz-s-32 {
+    font-size: 32px;
+  }
+  .fz-s-48 {
+    font-size: 48px;
+  }
+  .pb-s-24 {
+    padding-bottom: 24px;
+  }
+  .pb-s-32 {
+    padding-bottom: 32px;
+  }
+  .pb-s-40 {
+    padding-bottom: 40px;
+  }
+  .mt-s-8 {
+    margin-top: 8px;
+  }
+  .mb-s-12 {
+    margin-bottom: 12px;
+  }
+  .mb-s-16 {
+    margin-bottom: 16px;
+  }
+  .mb-s-24 {
+    margin-bottom: 24px;
+  }
+}/*# sourceMappingURL=all.css.map */
