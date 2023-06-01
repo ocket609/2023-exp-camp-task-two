@@ -1,0 +1,348 @@
+/*Home 首頁*/
+/*各區設定*/
+//1-header
+.header {
+    border-bottom: 1px solid #fff;
+    padding: 20px 0;
+    a {
+        color: #fff;
+    }
+    img {
+        max-width: 245px;
+    }
+    .nav-icon {
+        display: none;
+    }
+}
+//2-main
+.main {
+    h2 {
+        font-size: 120px;
+        padding: 40px 0;
+    }
+    .btn-start {
+        display: inline-block;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 16px;
+        padding: 20px 40px;
+        margin-bottom: 100px;
+    }
+}
+//3-sever
+.sever{
+    padding: 160px 0;
+    &-title {
+        padding-bottom: 80px;
+        h5 {
+            white-space: nowrap;
+            width: 33.33%;
+            padding-right: 24px;
+        }
+        h4 {
+            width: 66.66%;
+        }
+    }
+    &-list {
+        gap: 24px;
+    }
+    &-listCard {
+        width: 33.33%;
+        border: 1px solid #525252;
+        padding: 80px 40px;
+        border-radius: 16px;
+        &:hover {
+            border-color: #fff;
+        }
+    }
+}
+//4-partner
+.partner {
+    &-logo {
+        /*兩側陰影做法go*/ //兩側陰影作法參考同學
+        position: relative;
+        white-space: nowrap; //避免文字換行
+        overflow-x: auto; //讓區塊在手機版型時能夠左右滑動
+        &::before, &::after { 
+            position: absolute;
+            content: '';
+            top: 10;
+            bottom: 0;
+            box-shadow: 0 0 100px 100px #1E1E1E;
+        }
+        /*兩側陰影做法end*/
+        /*參考同學做法1(兩側陰影)：https://codepen.io/Eero-Chiao/pen/OJBdyYg
+        position: relative;
+        overflow: hidden;
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            z-index: 1;
+            box-shadow: 0 0 80px 80px #1E1E1E;
+        }*/
+        /*background: linear-gradient();*/
+        img {
+            width: 160px;
+            height: 40px;
+            padding: 0 20px;
+        }
+    }
+    &-message {
+        padding: 160px 0;
+        gap: 24px;
+    }
+    &-messageCard {
+        width: 33.33%;
+        padding: 40px;
+        background: #FFFFFF14; /*background: rgba(255, 255, 255, 0.08);*/
+        border-radius: 16px;
+    }
+}
+//5-content
+.content {
+    color: #020202;
+    background-color: #fff;
+    border-radius: 160px;
+    padding: 160px 0;
+    h3 {
+        text-align: center;
+    }
+}
+.search {
+    background-color: #F2F2F2;
+    border-radius: 16px;
+    padding: 20px 40px;
+    &-tool {
+        width: 100%;
+        color: #919191;
+        /*去除預設樣式↓↓*/
+        border: 0; //去除未選中狀態邊框
+        outline: none; //去除選中狀態邊框
+        /*去除預設樣式↑↑*/
+        background-color: #F2F2F2;
+    }
+}
+.selectAd {
+    select { /*無法以class清除預設*/
+        /*將預設的select選擇框樣式清除↓*/
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        /*將預設的select選擇框樣式清除↑*/
+        border-radius: 16px;
+        padding: 20px 40px;
+    }
+    &-itemsAll, &-itemsNewold {
+        optgroup {
+            color: #919191;
+            padding: 20px 40px;
+        }
+        option {
+            color: #020202;
+            padding-bottom: 4px;
+            &:hover, &:active, &:focus {
+            background-color: #F2F2F2;
+            }
+        }
+    }
+    &-nav {
+        gap: 0 20px;
+        overflow-x: auto; //讓區塊在手機版型時能夠左右滑動
+        button {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #919191;
+            background-color: #fff;
+            border-radius: 16px;
+            border: 0;
+            padding: 8px 16px;
+            white-space: nowrap; //避免文字換行
+            &:hover {
+            border: 1px solid #000;
+            }
+            &:active, &:focus {
+            background-color: #F2F2F2;
+            color: #020202;
+            font-weight: 700;
+            border: 0;
+            }
+        }
+    }
+    .optg-style {
+        border-bottom: 1px solid #F2F2F2;
+    }
+}
+.content_list {
+    padding: 40px 0;
+    &-card-img {
+        overflow: hidden;
+        /*img {
+            transition: 1.5s; //img以1.5秒時速放大
+            &:hover {
+            transform: scale(1.5, 1.5); //img x&y軸放大1.5倍
+            }
+        }*/
+        /*原設定碰到圖片時hover圖片放大，改為碰到框格區域(li)皆會放大*/
+    }
+    &-card {
+        max-width: 416px;
+        border: 1px solid #F2F2F2;
+        border-radius: 16px;
+        overflow: hidden; //img不超出框，一起bdrs16px
+        &:hover {
+            img {
+                transition: 1.5s; //img以1.5秒時速放大
+                transform: scale(1.5, 1.5); //img x&y軸放大1.5倍
+            }
+        }
+        /*改為碰到框格區域(li)皆會放大*/
+    }
+    &-card-title, &-card-body {
+        padding: 20px 32px;
+    }
+    &-card-body {
+        border-top: 1px solid #F2F2F2;
+    }
+}
+.content-btn {
+    gap: 0 4px;
+    button {
+        font-size: 14px;
+        line-height: 1.5;
+        font-weight: 700;
+        width: 48px;
+        height: 48px;
+        border-radius: 16px;
+        border: 0;
+        background-color: #fff;
+        &:hover {
+            border: 1px solid #000;
+        }
+        &:active, &:focus {
+            color: #fff;
+            background-color: #020202;
+        }
+    }
+}
+/*6-use*/
+.use {
+    a {
+        color: #fff;
+    }
+    &-top {
+        text-align: center;
+        padding: 160px 0;
+        &-btn {
+            display: inline-block;
+            border: 1px solid #fff;
+            border-radius: 16px;
+            padding: 20px 40px;
+        }
+    }
+    &-bottom {
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        padding: 80px 0;
+        img {
+            max-width: 245px;
+        }
+    }
+}
+/*7-footer*/
+.footer {
+    padding: 32px 0;
+    a {
+        color: #fff;
+        padding: 24px 0;
+    }
+    &-sideL-link {
+        gap: 20px;
+    }
+    &-sideR {
+        white-space: nowrap; //避免文字換行
+    }
+}
+  
+  
+/*RWD*/
+@media (max-width: 375px){
+    /*1-header*/
+    .header {
+        padding: 28px 0;
+        img {
+            max-width: 147px;
+        }
+        .nav {
+            display: none;
+        }
+        .nav-icon {
+            display: block;
+        }
+    }
+    /*2-main*/
+    .main {
+        h2 {
+            font-size: 48px;
+        }
+        .btn-start {
+            margin-bottom: 180px;
+        }
+        .effect {
+            img {
+            width: 33.33%;
+            }
+        }
+    }
+    /*3-sever*/
+    .sever {
+        padding: 120px 0;
+        &-title {
+            padding-bottom: 48px;
+        }
+        h4, h5 {
+            width: 100%;
+        }
+        &-listCard {
+            width: 100%;
+        }
+    }
+    /*4-partner*/
+    .partner {
+        &-messageCard {
+            width: 100%;
+        }
+    }
+    /*5-content*/
+    .content {
+        border-radius: 20px;
+    }
+    .selectAd {
+        &-itemsAll{
+            order: 1;
+        }
+        &-nav {
+            order: 3;
+        }
+        &-Newold {
+            order: 2;
+        }
+    }
+    .content_list {
+        padding: 48px 0 32px;
+    }
+    /*6-use*/
+    /*7-footer*/
+    .footer {
+        padding: 0;
+        &-sideL {
+            position: relative;
+            padding: 32px 0;
+        }
+        &-sideR {
+            position: absolute;
+            right: 12px;
+        }
+    }
+}

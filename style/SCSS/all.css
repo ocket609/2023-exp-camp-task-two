@@ -1,4 +1,7 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+/*全域*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -53,7 +56,6 @@ table {
   border-spacing: 0;
 }
 
-/*全域*/
 * {
   box-sizing: border-box;
   /*outline: 1px solid #fff*/
@@ -80,6 +82,20 @@ body {
   padding: 0 12px;
 }
 
+/*RWD*/
+@media (max-width: 992px) {
+  .container {
+    max-width: 992px;
+    padding: 0 12px;
+  }
+}
+@media (max-width: 375px) {
+  .container {
+    max-width: 375px;
+    padding: 0 12px;
+  }
+}
+/*Home 首頁*/
 /*各區設定*/
 .header {
   border-bottom: 1px solid #fff;
@@ -139,6 +155,7 @@ body {
   /*兩側陰影做法go*/
   position: relative;
   white-space: nowrap;
+  overflow-x: auto;
   /*兩側陰影做法end*/
   /*參考同學做法1(兩側陰影)：https://codepen.io/Eero-Chiao/pen/OJBdyYg
   position: relative;
@@ -223,6 +240,7 @@ body {
 }
 .selectAd-nav {
   gap: 0 20px;
+  overflow-x: auto;
 }
 .selectAd-nav button {
   font-size: 16px;
@@ -252,18 +270,24 @@ body {
 }
 .content_list-card-img {
   overflow: hidden;
-}
-.content_list-card-img img {
-  transition: 1.5s;
-}
-.content_list-card-img img:hover {
-  transform: scale(1.5, 1.5);
+  /*img {
+      transition: 1.5s; //img以1.5秒時速放大
+      &:hover {
+      transform: scale(1.5, 1.5); //img x&y軸放大1.5倍
+      }
+  }*/
+  /*原設定碰到圖片時hover圖片放大，改為碰到框格區域(li)皆會放大*/
 }
 .content_list-card {
   max-width: 416px;
   border: 1px solid #F2F2F2;
   border-radius: 16px;
   overflow: hidden;
+  /*改為碰到框格區域(li)皆會放大*/
+}
+.content_list-card:hover img {
+  transition: 1.5s;
+  transform: scale(1.5, 1.5);
 }
 .content_list-card-title, .content_list-card-body {
   padding: 20px 32px;
@@ -331,6 +355,81 @@ body {
   white-space: nowrap;
 }
 
+/*RWD*/
+@media (max-width: 375px) {
+  /*1-header*/
+  .header {
+    padding: 28px 0;
+  }
+  .header img {
+    max-width: 147px;
+  }
+  .header .nav {
+    display: none;
+  }
+  .header .nav-icon {
+    display: block;
+  }
+  /*2-main*/
+  .main h2 {
+    font-size: 48px;
+  }
+  .main .btn-start {
+    margin-bottom: 180px;
+  }
+  .main .effect img {
+    width: 33.33%;
+  }
+  /*3-sever*/
+  .sever {
+    padding: 120px 0;
+  }
+  .sever-title {
+    padding-bottom: 48px;
+  }
+  .sever h4, .sever h5 {
+    width: 100%;
+  }
+  .sever-listCard {
+    width: 100%;
+  }
+  /*4-partner*/
+  .partner-messageCard {
+    width: 100%;
+  }
+  /*5-content*/
+  .content {
+    border-radius: 20px;
+  }
+  .selectAd-itemsAll {
+    order: 1;
+  }
+  .selectAd-nav {
+    order: 3;
+  }
+  .selectAd-Newold {
+    order: 2;
+  }
+  .content_list {
+    padding: 48px 0 32px;
+  }
+  /*6-use*/
+  /*7-footer*/
+  .footer {
+    padding: 0;
+  }
+  .footer-sideL {
+    position: relative;
+    padding: 32px 0;
+  }
+  .footer-sideR {
+    position: absolute;
+    right: 12px;
+  }
+}
+/*Priching 定價*/
+/*各區設定*/
+/*RWD*/
 /*排版設定*/
 .d-flex {
   display: flex;
@@ -474,76 +573,6 @@ body {
 
 /*RWD*/
 @media (max-width: 375px) {
-  /*1-header*/
-  .header {
-    padding: 28px 0;
-  }
-  .header img {
-    max-width: 147px;
-  }
-  .header .nav {
-    display: none;
-  }
-  .header .nav-icon {
-    display: block;
-  }
-  /*2-main*/
-  .main h2 {
-    font-size: 48px;
-  }
-  .main .btn-start {
-    margin-bottom: 180px;
-  }
-  .main .effect img {
-    width: 33.33%;
-  }
-  /*3-sever*/
-  .sever {
-    padding: 120px 0;
-  }
-  .sever-title {
-    padding-bottom: 48px;
-  }
-  .sever h4, .sever h5 {
-    width: 100%;
-  }
-  .sever-listCard {
-    width: 100%;
-  }
-  /*4-partner*/
-  .partner-messageCard {
-    width: 100%;
-  }
-  /*5-content*/
-  .content {
-    border-radius: 20px;
-  }
-  .selectAd-itemsAll {
-    order: 1;
-  }
-  .selectAd-nav {
-    order: 3;
-  }
-  .selectAd-Newold {
-    order: 2;
-  }
-  .content_list {
-    padding: 48px 0 32px;
-  }
-  /*6-use*/
-  /*7-footer*/
-  .footer {
-    padding: 0;
-  }
-  .footer-sideL {
-    position: relative;
-    padding: 32px 0;
-  }
-  .footer-sideR {
-    position: absolute;
-    right: 12px;
-  }
-  /**/
   .jcc-s {
     justify-content: center;
   }

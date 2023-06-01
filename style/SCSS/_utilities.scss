@@ -1,0 +1,160 @@
+/*排版設定*/
+.d-flex {
+    display: flex;
+}
+.jcc {
+    justify-content: center;
+}
+.jcsb {
+    justify-content: space-between;
+}
+.jcfe {
+    justify-content: flex-end;
+}
+.aic {
+    align-items: center;
+}
+.fxdc {
+    flex-direction: column;
+}
+.fxww {
+    flex-wrap: wrap;
+}
+  
+.fw-block {
+    font-weight: 900;
+}
+.fw-bold {
+    font-weight: 700;
+}
+.fw-regular {
+    font-weight: 400;
+}
+.fz-14 {
+    font-size: 14px;
+}
+.fz-16 {
+    font-size: 16px;
+}
+.fz-20 {
+    font-size: 20px;
+}
+.fz-24 {
+    font-size: 24px;
+}
+.fz-32 {
+    font-size: 32px;
+}
+.fz-48 {
+    font-size: 48px;
+}
+.fz-80 {
+    font-size: 80px;
+}
+.lh1_5 {
+    line-height: 1.5;
+}
+  
+.saerchRgb {
+    color: #919191;
+}
+.selectRgb {
+    color: #020202;
+}
+.cardRgb{
+    color: #525252;
+}
+  
+.pb-4 {
+    padding-bottom: 4px;
+}
+.pr-12 {
+    padding-right: 12px;
+}
+.pr-16 {
+    padding-right: 16px;
+}
+.pr-20 {
+    padding-right: 20px;
+}
+.pr-100 {
+    padding-right: 100px;
+}
+.pl-12 {
+    padding-left: 12px;
+}
+.pb-8 {
+    padding-bottom: 8px;
+}
+.pb-12 {
+    padding-bottom: 12px;
+}
+.pb-20 {
+    padding-bottom: 20px;
+}
+.pb-40 {
+    padding-bottom: 40px;
+}
+.pb-80 {
+    padding-bottom: 80px;
+}
+.pt-20 {
+    padding-top: 20px;
+}
+.ml-20 {
+    margin-left: 20px;
+}
+.mb-24 {
+    margin-bottom: 24px;
+}
+
+/*RWD*/
+@media (max-width: 375px){
+    .jcc-s {
+        justify-content: center;
+    }
+    .aifs-s {
+        align-items: flex-start;
+    }
+    .fxdc-s {
+        flex-direction: column;
+    }
+    .fxww-s {
+        flex-wrap: wrap;
+    }
+    .fxdcr-s {
+        flex-direction: column-reverse;
+    }
+    
+    .fz-s-20 {
+        font-size: 20px;
+    }
+    .fz-s-32 {
+        font-size: 32px;
+    }
+    .fz-s-48 {
+        font-size: 48px;
+    }
+   
+    .pb-s-24 {
+        padding-bottom: 24px;
+    }
+    .pb-s-32 {
+        padding-bottom: 32px;
+    }
+    .pb-s-40 {
+        padding-bottom: 40px;
+    }
+    .mt-s-8 {
+        margin-top: 8px;
+    }
+    .mb-s-12 {
+        margin-bottom: 12px;
+    }
+    .mb-s-16 {
+        margin-bottom: 16px;
+    }
+    .mb-s-24 {
+        margin-bottom: 24px;
+    }
+}
