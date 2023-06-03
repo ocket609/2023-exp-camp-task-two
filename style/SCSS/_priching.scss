@@ -1,8 +1,34 @@
 /*Priching 定價*/
 /*各區設定*/
 
+.priching-main {
+    padding: 40px 0 160px;
+    img {
+        max-width: 180px;
+    }
+    h2 {
+        font-size: 120px;
+    }
+    h4 {
+        width: 50%;
+        padding-bottom: 238px;
+    }
+}
 
 
 
 /*RWD*/
-@media (max-width: 375px){}
+@media (max-width: 375px){
+    .priching-main {
+        img {
+            max-width: 117px;
+        }
+        h2 {
+            font-size: 48px;
+        }
+        h4 {
+            width: 66.66%;
+            padding-bottom: 258px;
+        }
+    }
+}
