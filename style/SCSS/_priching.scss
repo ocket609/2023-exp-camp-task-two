@@ -1,6 +1,7 @@
 /*Priching 定價*/
 /*各區設定*/
-
+//1-header
+//2-priching-main
 .priching-main {
     padding: 40px 0 160px;
     img {
@@ -15,10 +16,45 @@
     }
 }
 
+//3-price
+.price {
+    &-menu {
+        gap: 24px;
+    }
+    &-menu_card {
+        width: 49%; //不能寫50%，因為還有間距
+        border: 1px solid #525252;
+        border-radius: 16px;
+    }
+    &-menu_cardTitle {
+        padding: 20px 32px 136px;
+        p {
+            color: #F2F2F2;
+            font-size: 16px;
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                background-color: #F2F2F2;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+        }
+    }
+    &-menu_cardBody {
+        border-top: 1px solid #525252;
+        padding: 20px 32px;
+        a {
+            color: #FFFFFF;
+        }
+    }
+}
 
 
 /*RWD*/
 @media (max-width: 375px){
+    //2-priching-main
     .priching-main {
         img {
             max-width: 117px;
@@ -29,6 +65,18 @@
         h4 {
             width: 66.66%;
             padding-bottom: 258px;
+        }
+    }
+    //3-price
+    .price {
+        &-menu_card {
+            width: 100%;
+        }
+        &-menu_cardTitle {
+            padding: 20px 20px 58px;
+        }
+        &-menu_cardBody {
+            padding: 20px;
         }
     }
 }

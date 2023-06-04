@@ -443,6 +443,38 @@ body {
   padding-bottom: 238px;
 }
 
+.price-menu {
+  gap: 24px;
+}
+.price-menu_card {
+  width: 49%;
+  border: 1px solid #525252;
+  border-radius: 16px;
+}
+.price-menu_cardTitle {
+  padding: 20px 32px 136px;
+}
+.price-menu_cardTitle p {
+  color: #F2F2F2;
+  font-size: 16px;
+}
+.price-menu_cardTitle p::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #F2F2F2;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.price-menu_cardBody {
+  border-top: 1px solid #525252;
+  padding: 20px 32px;
+}
+.price-menu_cardBody a {
+  color: #FFFFFF;
+}
+
 /*RWD*/
 @media (max-width: 375px) {
   .priching-main img {
@@ -454,6 +486,15 @@ body {
   .priching-main h4 {
     width: 66.66%;
     padding-bottom: 258px;
+  }
+  .price-menu_card {
+    width: 100%;
+  }
+  .price-menu_cardTitle {
+    padding: 20px 20px 58px;
+  }
+  .price-menu_cardBody {
+    padding: 20px;
   }
 }
 /*排版設定*/
