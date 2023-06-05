@@ -132,7 +132,8 @@
                 <input class="search-tool fz-24 lh1_5 fw-regular" type="search" name="searchNav" id="searchNav" placeholder="輸入關鍵字搜尋">
             </div>
             <div class="selectAd d-flex jcsb fxww-s aic">
-                <div class="selectAd-itemsAll mb-s-24">
+                <div class="selectAd-itemsAll"></div>
+                <!-- <div class="selectAd-itemsAll mb-s-24">
                     <select name="selectAll" id="selectAll">
                         <option value="篩選">篩選
                         <span class="material-icons selectRgb fz-16">filter_alt</span>
@@ -154,7 +155,7 @@
                             <option value="prolificacy">生產力</option>
                         </optgroup>
                     </select>
-                </div>
+                </div> -->
                 <div class="selectAd-nav d-flex">
                     <button type="button">全部</button>
                     <button type="button">聊天</button>
@@ -164,13 +165,23 @@
                     <button type="button">客服</button>
                     <button type="button">生產力</button>
                 </div>
-                <div class="selectAd-Newold mb-s-24">
+                <div class="selectAd-Newold selectRgb fz-16 lh1_5">
+                    <button class="selectAd-Newold-btn selectRgb fz-16 lh1_5" type="button">
+                        <span>由新到舊</span>
+                        <span class="material-icons selectRgb fz-16">keyboard_arrow_down</span>
+                    </button>
+                    <ul class="selectAd-Newold-list">
+                        <li><a class="selectRgb fz-16 lh1_5" href="#">由新到舊</a></li>
+                        <li><a class="selectRgb fz-16 lh1_5" href="#">由舊到新</a></li>
+                    </ul>
+                </div>
+                <!-- <div class="selectAd-Newold mb-s-24">
                     <select name="" id="">
                         <option value="newtoold">由新到舊</option>
                         <option value="oldtonew">由舊到新</option>
                         <span class="material-icons selectRgb fz-16">keyboard_arrow_down</span>
                     </select>
-                </div>
+                </div> -->
             </div>
             <ul class="content_list d-flex jcsb fxww">
                 <li class="content_list-card mb-24 mb-s-12">

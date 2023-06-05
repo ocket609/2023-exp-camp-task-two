@@ -125,28 +125,61 @@
     }
 }
 .selectAd {
-    select { /*無法以class清除預設*/
-        /*將預設的select選擇框樣式清除↓*/
-        appearance: none;
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        /*將預設的select選擇框樣式清除↑*/
-        border-radius: 16px;
-        padding: 20px 40px;
+    &-itemsAll {
     }
-    &-itemsAll, &-itemsNewold {
-        optgroup {
-            color: #919191;
-            padding: 20px 40px;
+    &-Newold {
+        position: relative; /*父*/
+        &-btn, &-list {
+            background-color: #FFFFFF;
+            border-radius: 16px;
         }
-        option {
-            color: #020202;
-            padding-bottom: 4px;
-            &:hover, &:active, &:focus {
-            background-color: #F2F2F2;
+        &-btn {
+            border: 1px solid #F2F2F2;
+            padding: 20px 40px;
+            &:hover {
+                background-color: #F2F2F2;
+            }
+        }
+        &-list {
+            position: absolute; /*子*/
+            right: 0; /*固定位置*/
+            margin-top: 4px; /*間距，給top:4px會跑到最上面*/
+            box-shadow: 0px 4px 20px 0px #00000026;
+            padding: 16px 0;
+            display: none;
+        }
+        &-list a {
+            display: block;
+            padding: 4px 40px;
+            &:hover {
+                background-color: #F2F2F2;
             }
         }
     }
+
+
+    // select { /*無法以class清除預設*/
+    //     /*將預設的select選擇框樣式清除↓*/
+    //     appearance: none;
+    //     -moz-appearance: none;
+    //     -webkit-appearance: none;
+    //     /*將預設的select選擇框樣式清除↑*/
+    //     border-radius: 16px;
+    //     padding: 20px 40px;
+    // }
+    // &-itemsAll, &-itemsNewold {
+    //     optgroup {
+    //         color: #919191;
+    //         padding: 20px 40px;
+    //     }
+    //     option {
+    //         color: #020202;
+    //         padding-bottom: 4px;
+    //         &:hover, &:active, &:focus {
+    //         background-color: #F2F2F2;
+    //         }
+    //     }
+    // }
     &-nav {
         gap: 0 20px;
         overflow-x: auto; //讓區塊在手機版型時能夠左右滑動
@@ -160,7 +193,7 @@
             padding: 8px 16px;
             white-space: nowrap; //避免文字換行
             &:hover {
-            border: 1px solid #000;
+            border: 1px solid #F2F2F2;
             }
             &:active, &:focus {
             background-color: #F2F2F2;

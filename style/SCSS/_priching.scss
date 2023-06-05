@@ -47,10 +47,30 @@
         padding: 20px 32px;
         a {
             color: #FFFFFF;
+            &:hover {
+                border: 1px solid #FFFFFF;
+                border-radius: 16px;
+                padding: 10px;
+            }
         }
     }
 }
 
+//4-norm
+.norm {
+    padding: 160px 0;
+    ul {
+        margin-top: -40px;
+    }
+    li {
+        border-bottom: 1px solid #FFFFFF;
+        padding: 40px 0;
+    }
+}
+
+//5-content
+.content {
+}
 
 /*RWD*/
 @media (max-width: 375px){
@@ -77,6 +97,16 @@
         }
         &-menu_cardBody {
             padding: 20px;
+        }
+    }
+    //4-norm
+    .norm {
+        padding: 120px 0;
+        ul {
+            margin-top: 24px;
+        }
+        li {
+            padding: 24px 0 40px;
         }
     }
 }
