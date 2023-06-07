@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>任務二-Home</title>
     <link rel="stylesheet" href="./style/SCSS/all.css"/>
+    <script
+  src="https://code.jquery.com/jquery-3.7.0.min.js"
+  integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+  crossorigin="anonymous"></script>
+    <script src="./js/all.js"></script>
  
 </head>
 <body>
@@ -132,7 +137,29 @@
                 <input class="search-tool fz-24 lh1_5 fw-regular" type="search" name="searchNav" id="searchNav" placeholder="輸入關鍵字搜尋">
             </div>
             <div class="selectAd d-flex jcsb fxww-s aic">
-                <div class="selectAd-itemsAll"></div>
+                <div class="selectAd-itemsAll selectRgb fz-16 lh1_5">
+                    <button class="selectAd-itemsAll-btn d-flex aic">
+                        <span class="pr-12">篩選</span>
+                        <span class="material-icons selectRgb fz-16">filter_alt</span>
+                    </button>
+                    <ul class="selectAd-itemsAll-list">
+                        <li class="saerchRgb fz-12 lh1_5 fw-bold pl-40 pb-4">AI 模型</li>
+                        <li><a href="#">所有模型</a></li>
+                        <li><a href="#">卡卡</a></li>
+                        <li><a href="#">杰杰</a></li>
+                        <li><a href="#">琪琪</a></li>
+                        <li><a class="itemsAll-list-btm" href="#">昊昊</a></li>
+                        <!---->
+                        <li class="saerchRgb fz-12 lh1_5 fw-bold pl-40 pb-4 pt-40">類型</li>
+                        <li><a href="#">全部</a></li>
+                        <li><a href="#">聊天</a></li>
+                        <li><a href="#">影像辨識</a></li>
+                        <li><a href="#">翻譯</a></li>
+                        <li><a href="#">行銷</a></li>
+                        <li><a href="#">客服</a></li>
+                        <li><a href="#">生產力</a></li>
+                    </ul>
+                </div>
                 <!-- <div class="selectAd-itemsAll mb-s-24">
                     <select name="selectAll" id="selectAll">
                         <option value="篩選">篩選
@@ -166,13 +193,13 @@
                     <button type="button">生產力</button>
                 </div>
                 <div class="selectAd-Newold selectRgb fz-16 lh1_5">
-                    <button class="selectAd-Newold-btn selectRgb fz-16 lh1_5" type="button">
-                        <span>由新到舊</span>
+                    <button class="selectAd-Newold-btn selectRgb fz-16 lh1_5 d-flex aic" type="button">
+                        <span class="Newold-btn-title pr-12">由新到舊</span>
                         <span class="material-icons selectRgb fz-16">keyboard_arrow_down</span>
                     </button>
                     <ul class="selectAd-Newold-list">
-                        <li><a class="selectRgb fz-16 lh1_5" href="#">由新到舊</a></li>
-                        <li><a class="selectRgb fz-16 lh1_5" href="#">由舊到新</a></li>
+                        <li><a class="newToold selectRgb fz-16 lh1_5" href="#">由新到舊</a></li>
+                        <li><a class="oldTonew selectRgb fz-16 lh1_5" href="#">由舊到新</a></li>
                     </ul>
                 </div>
                 <!-- <div class="selectAd-Newold mb-s-24">
@@ -334,6 +361,6 @@
         </div>
     </div>
 
-    <script src="./js/all.js"></script>
+    
 </body>
 </html>
