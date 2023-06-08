@@ -132,8 +132,11 @@
             border-radius: 16px;
         }
         &-btn {
-            border: 1px solid #020202;
+            border: 1px solid #F2F2F2;
             padding: 20px 40px;
+            &:hover {
+                border-color: #020202;
+            }
         }
         &-list {
             position: absolute; /*子*/
@@ -278,6 +281,9 @@
     }
     &-card-body {
         border-top: 1px solid #F2F2F2;
+        a {
+            color: #020202;
+        }
     }
 }
 .content-btn {

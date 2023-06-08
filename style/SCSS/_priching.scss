@@ -72,6 +72,34 @@
 .content {
 }
 
+//6-qa
+.qa {
+    font-weight: 900;
+    color: #FFFFFF;
+    padding: 160px 0;
+    h5 {
+        width: 33.333%;
+    }
+    ul {
+        width: 66.66%;
+        margin-top: -16px;
+        margin-bottom: -16px;
+        li {
+            padding: 16px 0;
+        }
+        a {
+            width: 100%;
+            color: #FFFFFF;
+            border: 1px solid #525252;
+            border-radius: 16px;
+            padding: 20px 0 20px 40px;
+            &:hover {
+                border-color: #FFFFFF;
+            }
+        }
+    }
+}
+
 /*RWD*/
 @media (max-width: 375px){
     //2-priching-main
@@ -108,5 +136,9 @@
         li {
             padding: 24px 0 40px;
         }
+    }
+    //6-qa
+    .qa {
+        padding: 120px 0;
     }
 }

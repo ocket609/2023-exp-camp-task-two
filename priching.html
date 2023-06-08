@@ -14,7 +14,20 @@
 </head>
 <body>
     <div class="container">
-        <div class="header"></div>
+        <div class="header d-flex jcsb aic">
+            <h1 class="logo">
+                <a href="#"><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/logo.png" alt="LOGO"></img></a>
+            </h1>
+            <div class="nav">
+                <a class="lh1_5 pr-20" href="#">首頁</a>
+                <a class="lh1_5" href="#">定價</a>
+            </div>
+            <div class="nav-icon">
+                <a href="">
+                    <span class="material-icons fz-24">menu</span>
+                </a>
+            </div>
+        </div>
         <div class="priching-main">
             <h2 class="fw-block pb-80 pb-s-64">用多少，<br>
                 付多少。
@@ -132,17 +145,208 @@
                 <input class="search-tool fz-16 lh1_5" type="search" name="searchNav" id="searchNav" placeholder="輸入關鍵字搜尋">
                 <!--placeholder=""為預設底文字、-->
             </div>
-            <div class="selectAd"></div>
-            <div class="content_list"></div>
-            <div class="content-btn"></div>
+            <div class="selectAd d-flex jcsb fxww-s aic">
+                <div class="selectAd-itemsAll selectRgb fz-16 lh1_5">
+                    <button class="selectAd-itemsAll-btn d-flex aic">
+                        <span class="itemsAll-btn-title pr-12">篩選</span>
+                        <span class="material-icons selectRgb fz-16">filter_alt</span>
+                    </button>
+                    <ul class="selectAd-itemsAll-list">
+                        <li class="saerchRgb fz-12 lh1_5 fw-bold pl-40 pb-4">AI 模型</li>
+                        <li><a class="itemsAll-btn-other" href="#">所有模型</a></li>
+                        <li><a class="itemsAll-btn-other" href="#">卡卡</a></li>
+                        <li><a class="itemsAll-btn-other" href="#">杰杰</a></li>
+                        <li><a class="itemsAll-btn-other" href="#">琪琪</a></li>
+                        <li><a class="itemsAll-btn-other" class="itemsAll-list-btm" href="#">昊昊</a></li>
+                        <!---->
+                        <li class="saerchRgb fz-12 lh1_5 fw-bold pl-40 pb-4 pt-40">類型</li>
+                        <li><a class="itemsAll-btn-other" href="#">全部</a></li>
+                        <li><a class="itemsAll-btn-other" href="#">聊天</a></li>
+                        <li><a class="itemsAll-btn-other" href="#">影像辨識</a></li>
+                        <li><a class="itemsAll-btn-other" href="#">翻譯</a></li>
+                        <li><a class="itemsAll-btn-other" href="#">行銷</a></li>
+                        <li><a class="itemsAll-btn-other" href="#">客服</a></li>
+                        <li><a class="itemsAll-btn-other" href="#">生產力</a></li>
+                    </ul>
+                </div>
+                <div class="selectAd-nav d-flex">
+                    <button type="button">全部</button>
+                    <button type="button">聊天</button>
+                    <button type="button">影像辨識</button>
+                    <button type="button">翻譯</button>
+                    <button type="button">行銷</button>
+                    <button type="button">客服</button>
+                    <button type="button">生產力</button>
+                </div>
+                <div class="selectAd-Newold selectRgb fz-16 lh1_5">
+                    <button class="selectAd-Newold-btn selectRgb fz-16 lh1_5 d-flex aic" type="button">
+                        <span class="Newold-btn-title pr-12">由新到舊</span>
+                        <span class="material-icons selectRgb fz-16">keyboard_arrow_down</span>
+                    </button>
+                    <ul class="selectAd-Newold-list">
+                        <li><a class="newToold selectRgb fz-16 lh1_5" href="#">由新到舊</a></li>
+                        <li><a class="oldTonew selectRgb fz-16 lh1_5" href="#">由舊到新</a></li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="content_list d-flex jcsb fxww">
+                <li class="content_list-card mb-24 mb-s-12">
+                    <div class="content_list-card-img">
+                        <a href=""><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/tool1.png" alt="主題"></a>
+                    </div>
+                    <div class="content_list-card-title">
+                        <p class="fz-20 fw-bold pb-12">Chatbot Builder</p>
+                        <p class="fz-14 fw-regular cardRgb">建立智能化的聊天機器人，解答常見問題、提供客戶支援、收集反饋等。</p>
+                    </div>
+                    <div class="content_list-card-body d-flex jcsb aic">
+                        <p class="fw-bold">AI 模型</p>
+                        <p>卡卡</p>
+                    </div>
+                    <div class="content_list-card-body d-flex jcsb aic">
+                        <p>#聊天</p>
+                        <a href="#"><span class="material-icons">share</span></a>
+                    </div>
+                </li>
+                <li class="content_list-card mb-24 mb-s-12">
+                    <div class="content_list-card-img">
+                        <a href=""><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/tool2.png" alt="主題"></a>
+                    </div>
+                    <div class="content_list-card-title">
+                        <p class="fz-20 fw-bold pb-12">Image Recognition Platform</p>
+                        <p class="fz-14 fw-regular cardRgb">專業的圖像識別平台，識別圖像、分類、標記等。          </p> <br>
+                    </div>
+                    <div class="content_list-card-body d-flex jcsb aic">
+                        <p class="fw-bold">AI 模型</p>
+                        <p>杰杰</p>
+                    </div>
+                    <div class="content_list-card-body d-flex jcsb aic">
+                        <p>#影像辨識</p>
+                        <a href="#"><span class="material-icons">share</span></a>
+                    </div>
+                </li>
+                <li class="content_list-card mb-24 mb-s-12">
+                    <div class="content_list-card-img">
+                        <a href=""><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/tool3.png" alt="主題"></a>
+                    </div>
+                    <div class="content_list-card-title">
+                        <p class="fz-20 fw-bold pb-12">Language Translation API</p>
+                        <p class="fz-14 fw-regular cardRgb">專業的語言翻譯 API，實現文本翻譯功能，支援多種格式的文本。</p>
+                    </div>
+                    <div class="content_list-card-body d-flex jcsb aic">
+                        <p class="fw-bold">AI 模型</p>
+                        <p>琪琪</p>
+                    </div>
+                    <div class="content_list-card-body d-flex jcsb aic">
+                        <p>#翻譯</p>
+                        <a href="#"><span class="material-icons">share</span></a>
+                    </div>
+                </li>
+                <li class="content_list-card mb-s-12">
+                    <div class="content_list-card-img">
+                        <a href=""><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/tool4.png" alt="主題"></a>
+                    </div>
+                    <div class="content_list-card-title">
+                        <p class="fz-20 fw-bold pb-12">Sentiment Analysis API</p>
+                        <p class="fz-14 fw-regular cardRgb">自動識別文本中的情感傾向，包括正向、負向和中性等。適用於情感分析、社交媒體監控、市場調查等。</p>
+                    </div>
+                    <div class="content_list-card-body d-flex jcsb aic">
+                        <p class="fw-bold">AI 模型</p>
+                        <p>昊昊</p>
+                    </div>
+                    <div class="content_list-card-body d-flex jcsb aic">
+                        <p>#行銷</p>
+                        <a href="#"><span class="material-icons">share</span></a>
+                    </div>
+                </li>
+                <li class="content_list-card mb-s-12">
+                    <div class="content_list-card-img">
+                        <a href=""><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/tool5.png" alt="主題"></a>
+                    </div>
+                    <div class="content_list-card-title">
+                        <p class="fz-20 fw-bold pb-12">Fraud Detection Platform</p>
+                        <p class="fz-14 fw-regular cardRgb">預防詐騙活動，適用於銀行、金融、電商等。</p>
+                        <br>
+                    </div>
+                    <div class="content_list-card-body d-flex jcsb aic">
+                        <p class="fw-bold">AI 模型</p>
+                        <p>卡卡</p>
+                    </div>
+                    <div class="content_list-card-body d-flex jcsb aic">
+                        <p>#客服</p>
+                        <a href="#"><span class="material-icons">share</span></a>
+                    </div>
+                </li>
+                <li class="content_list-card">
+                    <div class="content_list-card-img">
+                        <a href=""><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/tool6.png" alt=""></a>
+                    </div>
+                    <div class="content_list-card-title">
+                        <p class="fz-20 fw-bold pb-12">Voice Assistant SDK</p>
+                        <p class="fz-14 fw-regular cardRgb">通過語音控制應用程式、設備，實現多種功能，例如播放音樂、查詢天氣、發送信息等。</p>
+                    </div>
+                    <div class="content_list-card-body d-flex jcsb aic">
+                        <p class="fw-bold">AI 模型</p>
+                        <p>杰杰</p>
+                    </div>
+                    <div class="content_list-card-body d-flex jcsb aic">
+                        <p>#生產力</p>
+                        <a href="#"><span class="material-icons">share</span></a>
+                    </div>
+                </li>
+            </ul>
+            <div class="content-btn d-flex jcfe aic">
+                <button type="button">1</button>
+                <button type="button">2</button>
+                <button type="button">3</button>
+                <button type="button">4</button>
+                <button type="button">5</button>
+                <button type="button"><span class="material-icons fz-16">keyboard_arrow_right</span></button>
+            </div>
         </div>
     </div>
     <div class="container">
-        <div class="qa"></div>
-        <div class="footer"></div>
+        <div class="qa d-flex jcsb fxdc-s">
+            <h5 class="fz-32 fz-s-20">常見問題</h5>
+            <ul class="qa-list">
+                <li class="qa-list-body">
+                    <a class="d-flex" href="#">
+                        <div class="qa-icon pr-20">
+                            <span class="material-icons fz-24">add</span>
+                            <span class="material-icons fz-24">remove</span>
+                        </div>
+                        <div class="qa-box">
+                            <p class="fz-20">如何選擇適合的AI模型？</p>
+                            <p class="fw-regular fz-16 lh1_5">content</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="qa-list-body">
+                    <a class="d-flex" href="#">
+                        <div class="qa-icon pr-20">
+                            <span class="material-icons fz-24">add</span>
+                            <span class="material-icons fz-24">remove</span>
+                        </div>
+                        <div class="qa-box">
+                            <p class="fz-20">如何選擇適合的AI模型？</p>
+                            <p class="fw-regular fz-16 lh1_5">content</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer fz-16 lh1_5 fw-bold d-flex jcsb aic aifs-s">
+            <div class="footer-sideL d-flex jcsb aic aifs-s fxdc-s">
+                <p class="pr-100 pb-s-24">AI工具王 © 2023</p>
+                <div class="footer-sideL-link d-flex">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                </div>
+            </div>
+            <div class="footer-sideR d-flex aic mt-s-8">
+                <a id="a" class="back_to_top" href="#">Back to top<span class="material-icons fz-16 pl-12">arrow_upward</span></a>
+            </div>
+        </div>
     </div>
-
-
-    <script src="./js/all.js"></script>
 </body>
 </html>

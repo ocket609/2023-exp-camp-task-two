@@ -226,8 +226,11 @@ body {
   border-radius: 16px;
 }
 .selectAd-itemsAll-btn {
-  border: 1px solid #020202;
+  border: 1px solid #F2F2F2;
   padding: 20px 40px;
+}
+.selectAd-itemsAll-btn:hover {
+  border-color: #020202;
 }
 .selectAd-itemsAll-list {
   position: absolute; /*子*/
@@ -346,6 +349,9 @@ body {
 }
 .content_list-card-body {
   border-top: 1px solid #F2F2F2;
+}
+.content_list-card-body a {
+  color: #020202;
 }
 
 .content-btn {
@@ -543,6 +549,33 @@ body {
   padding: 40px 0;
 }
 
+.qa {
+  font-weight: 900;
+  color: #FFFFFF;
+  padding: 160px 0;
+}
+.qa h5 {
+  width: 33.333%;
+}
+.qa ul {
+  width: 66.66%;
+  margin-top: -16px;
+  margin-bottom: -16px;
+}
+.qa ul li {
+  padding: 16px 0;
+}
+.qa ul a {
+  width: 100%;
+  color: #FFFFFF;
+  border: 1px solid #525252;
+  border-radius: 16px;
+  padding: 20px 0 20px 40px;
+}
+.qa ul a:hover {
+  border-color: #FFFFFF;
+}
+
 /*RWD*/
 @media (max-width: 375px) {
   .priching-main img {
@@ -572,6 +605,9 @@ body {
   }
   .norm li {
     padding: 24px 0 40px;
+  }
+  .qa {
+    padding: 120px 0;
   }
 }
 /*排版設定*/
