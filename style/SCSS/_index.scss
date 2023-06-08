@@ -142,7 +142,7 @@
             box-shadow: 0px 4px 20px 0px #00000026;
             padding: 20px 0;
             margin-top: 4px;
-            display: none; /*預設隱藏，還沒做互動！！！*/
+            display: none;
             a {
                 display: block;
                 color: #020202;
@@ -193,11 +193,11 @@
                 background-color: #F2F2F2;
             }
         }
-        &-list.show{
-            display: block;
-        }
+        
     }
-
+    .selectAd-Newold-list.show, .selectAd-itemsAll-list.show {
+        display: block;
+    }
 
     // select { /*無法以class清除預設*/
     //     /*將預設的select選擇框樣式清除↓*/
