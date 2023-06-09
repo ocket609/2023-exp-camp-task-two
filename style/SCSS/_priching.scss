@@ -25,6 +25,9 @@
         width: 49%; //不能寫50%，因為還有間距
         border: 1px solid #525252;
         border-radius: 16px;
+        &:hover {
+            border-color: #FFFFFF;
+        }
     }
     &-menu_cardTitle {
         padding: 20px 32px 136px;

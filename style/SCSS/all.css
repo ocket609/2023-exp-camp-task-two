@@ -123,6 +123,10 @@ body {
   padding: 20px 40px;
   margin-bottom: 100px;
 }
+.main .btn-start:hover {
+  color: #020202;
+  background-color: #fff;
+}
 
 .sever {
   padding: 160px 0;
@@ -508,6 +512,9 @@ body {
   width: 49%;
   border: 1px solid #525252;
   border-radius: 16px;
+}
+.price-menu_card:hover {
+  border-color: #FFFFFF;
 }
 .price-menu_cardTitle {
   padding: 20px 32px 136px;
