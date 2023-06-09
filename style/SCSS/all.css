@@ -575,6 +575,12 @@ body {
 .qa ul a:hover {
   border-color: #FFFFFF;
 }
+.qa ul a:active {
+  border: 2px solid #FFFFFF;
+}
+.qa-box-showme.show {
+  display: block;
+}
 
 /*RWD*/
 @media (max-width: 375px) {
@@ -609,8 +615,15 @@ body {
   .qa {
     padding: 120px 0;
   }
+  .qa ul {
+    width: 100%;
+  }
 }
 /*排版設定*/
+.d-none {
+  display: none;
+}
+
 .d-block {
   display: block;
 }

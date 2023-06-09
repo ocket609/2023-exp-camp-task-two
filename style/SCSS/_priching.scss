@@ -96,7 +96,13 @@
             &:hover {
                 border-color: #FFFFFF;
             }
+            &:active {
+                border: 2px solid #FFFFFF;
+            }
         }
+    }
+    &-box-showme.show {
+        display: block;
     }
 }
 
@@ -140,5 +146,8 @@
     //6-qa
     .qa {
         padding: 120px 0;
+        ul {
+            width: 100%;
+        }
     }
 }
