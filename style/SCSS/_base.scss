@@ -53,6 +53,9 @@ table {
     box-sizing: border-box;
     /*outline: 1px solid #fff*/
 }
+*{
+    outline: 1px solid #000
+}
 a {
     text-decoration: none;
 }
@@ -72,13 +75,18 @@ body {
 }
 
 /*RWD*/
-@media (max-width: 992px){
+@media (max-width: 992px) {
     .container {
         max-width: 992px;
-        padding: 0 12px;
+        padding: 0 24px;
     }
 }
-@media (max-width: 375px){
+@media (max-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (max-width: 375px) {
     .container {
         max-width: 375px;
         padding: 0 12px;

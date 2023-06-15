@@ -128,7 +128,32 @@
 }
 
 /*RWD*/
-@media (max-width: 375px){
+@media (max-width: 768px) {
+    .fxdc-m {
+        flex-direction: column;
+    }
+    .fxww-m {
+        flex-wrap: wrap;
+    }
+    .jcc-m {
+        justify-content: center;
+    }
+    .aic-m {
+        align-items: center;
+    }
+
+    .fz-m-48 {
+        font-size: 48px;
+    }
+
+    .pb-m-24 {
+        padding-bottom: 24px;
+    }
+    .mb-m-18 {
+        margin-bottom: 18px;
+    }
+}
+@media (max-width: 375px) {
     .jcc-s {
         justify-content: center;
     }

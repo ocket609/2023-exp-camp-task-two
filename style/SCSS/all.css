@@ -61,6 +61,10 @@ table {
   /*outline: 1px solid #fff*/
 }
 
+* {
+  outline: 1px solid #000;
+}
+
 a {
   text-decoration: none;
 }
@@ -86,7 +90,12 @@ body {
 @media (max-width: 992px) {
   .container {
     max-width: 992px;
-    padding: 0 12px;
+    padding: 0 24px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
   }
 }
 @media (max-width: 375px) {
@@ -111,6 +120,35 @@ body {
   display: none;
 }
 
+/*RWD-1-header*/
+@media (max-width: 768px) {
+  .header {
+    padding: 28px 0;
+  }
+  .header img {
+    max-width: 147px;
+  }
+  .header .nav {
+    display: none;
+  }
+  .header .nav-icon {
+    display: block;
+  }
+}
+@media (max-width: 375px) {
+  .header {
+    padding: 28px 0;
+  }
+  .header img {
+    max-width: 147px;
+  }
+  .header .nav {
+    display: none;
+  }
+  .header .nav-icon {
+    display: block;
+  }
+}
 .main h2 {
   font-size: 120px;
   padding: 40px 0;
@@ -128,6 +166,30 @@ body {
   background-color: #fff;
 }
 
+/*RWD-2-main*/
+@media (max-width: 768px) {
+  .main h2 {
+    font-size: 80px;
+  }
+  .main .effect img {
+    width: 33.33%;
+  }
+}
+@media (max-width: 375px) {
+  .main {
+    /*.effect {
+        img {
+        width: 33.33%;
+        }
+    }*/
+  }
+  .main h2 {
+    font-size: 48px;
+  }
+  .main .btn-start {
+    margin-bottom: 180px;
+  }
+}
 .sever {
   padding: 160px 0;
 }
@@ -155,6 +217,30 @@ body {
   border-color: #fff;
 }
 
+/*RWD-3-sever*/
+@media (max-width: 768px) {
+  .sever h4, .sever h5 {
+    width: 90%;
+  }
+  .sever-listCard {
+    width: 90%;
+    /*width: 66.66%;*/
+  }
+}
+@media (max-width: 375px) {
+  .sever {
+    padding: 120px 0;
+  }
+  .sever-title {
+    padding-bottom: 48px;
+  }
+  .sever h4, .sever h5 {
+    width: 100%;
+  }
+  .sever-listCard {
+    width: 100%;
+  }
+}
 .partner-logo {
   /*兩側陰影做法go*/
   position: relative;
@@ -197,6 +283,17 @@ body {
   border-radius: 16px;
 }
 
+/*RWD-4-partner*/
+@media (max-width: 768px) {
+  .partner-messageCard {
+    width: 90%;
+  }
+}
+@media (max-width: 375px) {
+  .partner-messageCard {
+    width: 100%;
+  }
+}
 .content {
   color: #020202;
   background-color: #fff;
@@ -379,6 +476,46 @@ body {
   background-color: #020202;
 }
 
+/*RWD-5-content*/
+@media (max-width: 768px) {
+  .content {
+    border-radius: 80px;
+  }
+  .selectAd-itemsAll {
+    order: 1;
+  }
+  .selectAd-nav {
+    order: 3;
+  }
+  .selectAd-Newold {
+    order: 2;
+  }
+  .content_list-card {
+    max-width: 110%;
+  }
+  .content_list-card img {
+    width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  .content {
+    border-radius: 20px;
+  }
+  /*.selectAd {
+      &-itemsAll{
+          order: 1;
+      }
+      &-nav {
+          order: 3;
+      }
+      &-Newold {
+          order: 2;
+      }
+  }*/
+  .content_list {
+    padding: 48px 0 32px;
+  }
+}
 /*6-use*/
 .use a {
   color: #fff;
@@ -402,6 +539,10 @@ body {
   max-width: 245px;
 }
 
+/*RWD*/
+@media (max-width: 375px) {
+  /*6-use*/
+}
 /*7-footer*/
 .footer {
   padding: 32px 0;
@@ -419,63 +560,6 @@ body {
 
 /*RWD*/
 @media (max-width: 375px) {
-  /*1-header*/
-  .header {
-    padding: 28px 0;
-  }
-  .header img {
-    max-width: 147px;
-  }
-  .header .nav {
-    display: none;
-  }
-  .header .nav-icon {
-    display: block;
-  }
-  /*2-main*/
-  .main h2 {
-    font-size: 48px;
-  }
-  .main .btn-start {
-    margin-bottom: 180px;
-  }
-  .main .effect img {
-    width: 33.33%;
-  }
-  /*3-sever*/
-  .sever {
-    padding: 120px 0;
-  }
-  .sever-title {
-    padding-bottom: 48px;
-  }
-  .sever h4, .sever h5 {
-    width: 100%;
-  }
-  .sever-listCard {
-    width: 100%;
-  }
-  /*4-partner*/
-  .partner-messageCard {
-    width: 100%;
-  }
-  /*5-content*/
-  .content {
-    border-radius: 20px;
-  }
-  .selectAd-itemsAll {
-    order: 1;
-  }
-  .selectAd-nav {
-    order: 3;
-  }
-  .selectAd-Newold {
-    order: 2;
-  }
-  .content_list {
-    padding: 48px 0 32px;
-  }
-  /*6-use*/
   /*7-footer*/
   .footer {
     padding: 0;
@@ -489,6 +573,7 @@ body {
     right: 12px;
   }
 }
+/*RWD*/
 /*Priching 定價*/
 /*各區設定*/
 .priching-main {
@@ -792,6 +877,29 @@ body {
 }
 
 /*RWD*/
+@media (max-width: 768px) {
+  .fxdc-m {
+    flex-direction: column;
+  }
+  .fxww-m {
+    flex-wrap: wrap;
+  }
+  .jcc-m {
+    justify-content: center;
+  }
+  .aic-m {
+    align-items: center;
+  }
+  .fz-m-48 {
+    font-size: 48px;
+  }
+  .pb-m-24 {
+    padding-bottom: 24px;
+  }
+  .mb-m-18 {
+    margin-bottom: 18px;
+  }
+}
 @media (max-width: 375px) {
   .jcc-s {
     justify-content: center;
