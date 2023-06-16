@@ -370,7 +370,7 @@
         /*原設定碰到圖片時hover圖片放大，改為碰到框格區域(li)皆會放大*/
     }
     &-card {
-        max-width: 416px;
+        width: 416px;
         border: 1px solid #F2F2F2;
         border-radius: 16px;
         overflow: hidden; //img不超出框，一起bdrs16px
@@ -430,7 +430,7 @@
     }
     .content_list {
         &-card {
-            max-width: 110%;
+            width: 80%; //蓋掉一開始的416px，吃到父層的width的80%
             img {
                 width: 100%;
             }
@@ -442,18 +442,10 @@
     .content {
         border-radius: 20px;
     }
-    /*.selectAd {
-        &-itemsAll{
-            order: 1;
-        }
-        &-nav {
-            order: 3;
-        }
-        &-Newold {
-            order: 2;
-        }
-    }*/
     .content_list {
+        &-card {
+            width: 100%;
+        }
         padding: 48px 0 32px;
     }
 }
