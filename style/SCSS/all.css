@@ -145,6 +145,17 @@ body {
     display: block;
   }
 }
+.main {
+  /*同學寫法參考
+  .effect {
+      overfloe: hidden;
+      img {
+          position: relative;
+          &
+      }
+  }
+  */
+}
 .main h2 {
   font-size: 120px;
   padding: 40px 0;
@@ -160,6 +171,44 @@ body {
 .main .btn-start:hover {
   color: #020202;
   background-color: #fff;
+}
+.main .effect {
+  overflow: hidden;
+}
+.main .effect .move-1 {
+  position: relative;
+  animation-name: img-move;
+  animation-duration: 3s;
+  animation-delay: 0.8s;
+  animation-iteration-count: infinite;
+}
+.main .effect .move-2 {
+  position: relative;
+  animation-name: img-move;
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+}
+.main .effect .move-3 {
+  position: relative;
+  animation-name: img-move;
+  animation-duration: 3s;
+  animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+}
+@keyframes img-move {
+  0% {
+    top: 180px;
+  }
+  30% {
+    top: 0;
+  }
+  80% {
+    top: 0;
+  }
+  100% {
+    top: -180px;
+  }
 }
 
 /*RWD-2-main*/

@@ -62,6 +62,53 @@
             background-color: #fff;
         }
     }
+    .effect {
+        overflow: hidden; //固定住，讓img不跑出框
+        .move-1 {
+            position: relative;
+            animation-name: img-move;
+            animation-duration: 3s;
+            animation-delay: .8s;
+            animation-iteration-count: infinite;
+        }
+        .move-2 {
+            position: relative;
+            animation-name: img-move;
+            animation-duration: 3s;
+            animation-delay: .5s;
+            animation-iteration-count: infinite;
+        }
+        .move-3 {
+            position: relative;
+            animation-name: img-move;
+            animation-duration: 3s;
+            animation-delay: .2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes img-move {
+            0% {
+                top: 180px;
+            }
+            30% {
+                top: 0;
+            }
+            80% {
+                top: 0;
+            }
+            100% {
+                top: -180px;
+            }
+        }
+    }
+    /*同學寫法參考
+    .effect {
+        overfloe: hidden;
+        img {
+            position: relative;
+            &
+        }
+    }
+    */
 }
 /*RWD-2-main*/
 @media (max-width: 768px) {
