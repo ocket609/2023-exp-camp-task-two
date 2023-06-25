@@ -626,6 +626,45 @@ body {
   width: 50%;
   padding-bottom: 238px;
 }
+.priching-main .effect {
+  /*index已有建立此CSS動畫，但是是歸放在main裡所以這邊作用不到，這邊是歸在priching-main裡，所以要再寫一次。下次可以新增共用動畫的CSS檔*/
+  overflow: hidden;
+}
+.priching-main .effect .move-1 {
+  position: relative;
+  animation-name: img-move;
+  animation-duration: 3s;
+  animation-delay: 0.8s;
+  animation-iteration-count: infinite;
+}
+.priching-main .effect .move-2 {
+  position: relative;
+  animation-name: img-move;
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+}
+.priching-main .effect .move-3 {
+  position: relative;
+  animation-name: img-move;
+  animation-duration: 3s;
+  animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+}
+@keyframes img-move {
+  0% {
+    top: 180px;
+  }
+  30% {
+    top: 0;
+  }
+  80% {
+    top: 0;
+  }
+  100% {
+    top: -180px;
+  }
+}
 
 .price-menu {
   gap: 24px;
