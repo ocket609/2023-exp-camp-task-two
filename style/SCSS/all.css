@@ -151,7 +151,31 @@ body {
       overfloe: hidden;
       img {
           position: relative;
-          &
+          &:first-child {
+              animation:img-move 3s .8s infinite;
+              //簡寫
+          }
+          &:nth-child(2) {
+              animation:img-move 3s .5s infinite;
+          }
+          &:last-child {
+              animation:img-move 3s .2s infinite;
+          }
+          //DOM(父層)內的child(子元素)
+      }
+      @keyframes img-move {
+          0% {
+              top: 180px;
+          }
+          30% {
+              top: 0;
+          }
+          80% {
+              top: 0;
+          }
+          100% {
+              top: -180px;
+          }
       }
   }
   */
