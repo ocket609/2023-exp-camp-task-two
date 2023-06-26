@@ -1,19 +1,19 @@
 //jQuery
 $(document).ready(function(e) {
     //newtoold下拉選單-開啟選單
-    $('.selectAd-Newold-btn').click(function(e) {
+    $('.selectAd-Newold-btn').click(function(e) { //按鈕點擊
         e.preventDefault();
-        $('.selectAd-Newold-list').toggleClass('show');
+        $('.selectAd-Newold-list').toggleClass('show'); //選單開啟
     });
     //切換按鈕
-    $('.newToold').click(function(e) {
+    $('.newToold').click(function(e) { 
         e.preventDefault();  //防止冒泡
-        $('.selectAd-Newold-btn').toggleClass('show');
-        $('.Newold-btn-title').text($(this).text());
+        $('.selectAd-Newold-list').toggleClass('show'); //選單切換
+        $('.Newold-btn-title').text($(this).text()); //按鈕原內容切換成此內容
     });
     $('.oldTonew').click(function(e) {
         e.preventDefault();  //防止冒泡
-        $('.selectAd-Newold-btn').toggleClass('show');
+        $('.selectAd-Newold-list').toggleClass('show');
         $('.Newold-btn-title').text($('.oldTonew').text());
     });
     //itemsAll下拉選單-開啟選單
@@ -24,7 +24,7 @@ $(document).ready(function(e) {
     //切換按鈕
     $('.itemsAll-btn-other').click(function(e) {
         e.preventDefault();  //防止冒泡
-        $('.selectAd-itemsAll-btn').toggleClass('show');
+        $('.selectAd-itemsAll-list').toggleClass('show');
         $('.itemsAll-btn-title').text($(this).text());
     });
 
